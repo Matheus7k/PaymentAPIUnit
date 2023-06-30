@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace PaymentAPI.Application.Queries.Order.v1.List
+namespace PaymentAPI.Application.Order.Queries.v1.List
 {
     public class ListOrderQueryProfile : Profile
     {

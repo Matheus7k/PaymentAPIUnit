@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using PaymentAPI;
-using PaymentAPI.Infra.Repository.Context;
+//using PaymentAPI.Infra.Repository.Context;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<PaymentAPIContext>(options =>
-   options.UseSqlServer(builder.Configuration.GetConnectionString("PaymentAPIContext")));
+//builder.Services.AddDbContext<PaymentAPIContext>(options =>
+//   options.UseSqlServer(builder.Configuration.GetConnectionString("PaymentAPIContext")));
 // Add services to the container.
 
 var config = builder.Configuration;

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace PaymentAPI.Application.Commands.Payment.v1.Create
+namespace PaymentAPI.Application.Payment.Commands.v1.Create
 {
     public class CreatePaymentCommandProfile : Profile
     {

@@ -2,7 +2,7 @@
 using MediatR;
 using PaymentAPI.Domain.Contracts;
 
-namespace PaymentAPI.Application.Commands.Order.v1.Create
+namespace PaymentAPI.Application.Order.Commands.v1.Create
 {
     public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, Domain.Entities.v1.Order>
     {

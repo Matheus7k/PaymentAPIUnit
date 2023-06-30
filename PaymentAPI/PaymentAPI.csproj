@@ -23,4 +23,8 @@
     <ProjectReference Include="..\PaymentAPI.Infra.Repository\PaymentAPI.Infra.Repository.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

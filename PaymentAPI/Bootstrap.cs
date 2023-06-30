@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PaymentAPI.Application;
-using PaymentAPI.Application.Commands.Order.v1.Create;
-using PaymentAPI.Application.Commands.Payment.v1.Create;
-using PaymentAPI.Application.Queries.Order.v1.List;
-using PaymentAPI.Application.Queries.Payment.v1.List;
+using PaymentAPI.Application.Order.Commands.v1.Create;
+using PaymentAPI.Application.Order.Queries.v1.List;
+using PaymentAPI.Application.Payment.Commands.v1.Create;
+using PaymentAPI.Application.Payment.Queries.v1.List;
 using PaymentAPI.Application.Strategies;
 using PaymentAPI.Domain.Contracts;
 using PaymentAPI.Infra.Repository;
-using PaymentAPI.Infra.Repository.Context;
+//using PaymentAPI.Infra.Repository.Context;
 using PaymentAPI.Infra.Repository.Repositories;
 
 namespace PaymentAPI
@@ -76,7 +76,7 @@ namespace PaymentAPI
 
         private static void AddRepositories(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<DbContext, PaymentAPIContext>();
+            //services.AddScoped<DbContext, PaymentAPIContext>();
             services.AddScoped(typeof(IBaseRepository<>), typeof(SqlRepository<>));
         }
 

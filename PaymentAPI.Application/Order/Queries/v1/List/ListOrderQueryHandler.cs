@@ -2,7 +2,7 @@
 using MediatR;
 using PaymentAPI.Domain.Contracts;
 
-namespace PaymentAPI.Application.Queries.Order.v1.List
+namespace PaymentAPI.Application.Order.Queries.v1.List
 {
     public class ListOrderQueryHandler : IRequestHandler<ListOrderQuery, IEnumerable<ListOrderQueryResponse>>
     {

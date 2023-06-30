@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace PaymentAPI.Application.Commands.Payment.v1.Create
+namespace PaymentAPI.Application.Payment.Commands.v1.Create
 {
     public class CreatePaymentCommand : IRequest<ActionResult<Domain.Entities.v1.Payment>>
     {

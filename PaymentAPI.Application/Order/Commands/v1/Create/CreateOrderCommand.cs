@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace PaymentAPI.Application.Commands.Order.v1.Create
+namespace PaymentAPI.Application.Order.Commands.v1.Create
 {
     public class CreateOrderCommand : IRequest<Domain.Entities.v1.Order>
     {

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using PaymentAPI.Application.Strategies;
 using PaymentAPI.Domain.Contracts;
 
-namespace PaymentAPI.Application.Commands.Payment.v1.Create
+namespace PaymentAPI.Application.Payment.Commands.v1.Create
 {
     public class CreatePaymentCommandHandler : IRequestHandler<CreatePaymentCommand, ActionResult<Domain.Entities.v1.Payment>>
     {
